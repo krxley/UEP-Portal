@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\UEP logo.png" href="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\UEP logo.png">
+  <title>UEP Academic Portal - Campus Life</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Open+Sans:wght@400;600&display=swap');
+    .font-crimson { font-family: 'Crimson Text', serif; }
+    .font-open { font-family: 'Open Sans', sans-serif; }
+    .uep-red { color: #A41034; }
+    .uep-red-bg { background-color: #A41034; }
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .video-wrapper {
+      position: relative;
+    }
+    .video-wrapper > video {
+      width: 100%;
+      vertical-align: middle;
+    }
+    .video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+      display: none;
+    }
+    .video-overlay-play-button {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: 10px calc(50% - 50px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      opacity: 0.95;
+      cursor: pointer;
+      background-image: linear-gradient(transparent, #000);
+      transition: opacity 150ms;
+    }
+    .video-overlay-play-button:hover {
+      opacity: 1;
+    }
+    .video-overlay-play-button.is-hidden {
+      display: none;
+    }
+    .video {
+      width :100%;
+    }
+
+    /* Fade-up animation (slower) */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1.5s ease-out; /* slowed down */
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="font-open bg-gray-50">
+
+  <!-- Navbar -->
+  <div class="navbar bg-white shadow-lg border-b-2 border-red-800 sticky top-0 z-50" data-aos="fade-up">
+    <div class="navbar-start">
+      <a class="btn btn-ghost normal-case text-xl font-crimson text-red-800 font-bold" href="index.html">
+        <i class="fas fa-university mr-2"></i> UEP Academic Portal
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="home.html" class="font-medium text-gray-700 hover:text-red-800 transition">Home</a></li>
+        <li><a href="academics.html" class="font-medium text-gray-700 hover:text-red-800 transition">Academics</a></li>
+        <li><a href="research.html" class="font-medium text-gray-700 hover:text-red-800 transition">Research</a></li>
+        <li><a href="campuslife.html" class="font-medium text-red-800">Campus Life</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a href="login.html" class="btn bg-red-700 text-white hover:bg-red-900 border-none transition">
+        Access Portal
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section with Parallax -->
+  <div class="relative h-[70vh] parallax" style="background-image: url('https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/475178000_1061116839363449_6451582139767253441_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEvdfbZqT8UduARqV7PT78IroiVbXsR8DOuiJVtexHwMxfh5AU6dXpljvkgHedej2fpc_oRyUBLksjYCgOQvarp&_nc_ohc=u2aUQpueFNMQ7kNvwEmxBJ7&_nc_oc=AdklRuNGxa1fMNEwQwpZ9oQUasRScMc4P4yPUVF0PEvULgQiYqH0YBguZd8APm_MH4M&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=5D4Rl1kn7MITx3sDiWu0Tw&oh=00_Afd9zIFOLabZvPfuqXzo9QCoQ7mtayfNXyYjz9JTVjRkDQ&oe=690A72F2');" data-aos="fade-up">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative flex items-center justify-center h-full text-center text-white px-6" data-aos="fade-up">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-crimson font-bold mb-4">Campus Life at UEP</h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto">A vibrant space where history, culture, and innovation meet.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- History Section (Timeline Style) -->
+  <section class="py-16 bg-white" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-crimson font-bold uep-red text-center mb-12" data-aos="fade-up">Our History</h2>
+      <div class="relative border-l-4 border-red-700 pl-8 space-y-12">
+
+        <div data-aos="fade-right">
+          <h3 class="text-xl font-bold font-crimson text-red-700">2005 – Founding of UEP</h3>
+          <p class="text-gray-700">The University of Eastern Pangasinan was founded with the mission to provide quality, accessible education for all learners.</p>
+        </div>
+
+        <div data-aos="fade-left">
+          <h3 class="text-xl font-bold font-crimson text-red-700">2010 – Expansion of Programs</h3>
+          <p class="text-gray-700">UEP introduced new academic programs, research initiatives, and student organizations that foster innovation and leadership.</p>
+        </div>
+
+        <div data-aos="fade-right">
+          <h3 class="text-xl font-bold font-crimson text-red-700">Present – Growth & Community</h3>
+          <p class="text-gray-700">Today, UEP is a hub for cultural pride, academic excellence, and strong community engagement in Pangasinan and beyond.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Life Overview (Interactive Cards) -->
+  <section class="py-16 bg-gray-50" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-crimson font-bold uep-red text-center mb-12" data-aos="fade-up">Life at UEP</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-500 text-center" data-aos="fade-up">
+          <i class="fas fa-basketball-ball text-5xl uep-red mb-4"></i>
+          <h3 class="text-xl font-crimson font-bold mb-3">Sports & Wellness</h3>
+          <p class="text-gray-600">Our intramurals, sports teams, and fitness facilities encourage teamwork and promote health among students.</p>
+        </div>
+
+        <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-500 text-center" data-aos="fade-up" data-aos-delay="150">
+          <i class="fas fa-theater-masks text-5xl uep-red mb-4"></i>
+          <h3 class="text-xl font-crimson font-bold mb-3">Culture & Arts</h3>
+          <p class="text-gray-600">Through music, dance, and cultural festivals, UEP showcases diverse student talents and strengthens cultural pride.</p>
+        </div>
+
+        <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-500 text-center" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-hands-helping text-5xl uep-red mb-4"></i>
+          <h3 class="text-xl font-crimson font-bold mb-3">Community Engagement</h3>
+          <p class="text-gray-600">UEP instills values of leadership and service through outreach programs, volunteerism, and social responsibility.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <div id="welcome_section" class="py-16 bg-gradient-to-b from-gray-50 via-white to-gray-100" data-aos="fade-up">
+      <div class="container mx-auto px-6 text-center">
+
+        <!-- Welcome Text -->
+        <h1 class="text-3xl md:text-4xl font-crimson font-bold text-red-800" data-aos="fade-up">
+          Welcome to University of Eastern Pangasinan
+        </h1>
+        <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="150">
+          At UEP, campus life goes beyond classrooms — it is a journey of discovery, growth, and community.  
+          Our university is a place where students find opportunities to learn, connect, and thrive.  
+          Together, we embrace a culture of excellence, innovation, and service for the future.
+        </p>
+
+        <!-- Video Frame -->
+        <div class="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl mt-8" data-aos="fade-up" data-aos-delay="300">
+          <video controls autoplay loop muted playsinline class="w-full rounded-lg">
+            <source src="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\UEP CAMPUS Tour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+      </div>
+    </section>
+
+  <!-- Footer -->
+<footer class="footer p-10 bg-gray-900 text-gray-300" data-aos="fade-up">
+    <aside data-aos="fade-up" data-aos-delay="150">
+        <i class="fas fa-university text-3xl text-red-600 mb-4"></i>
+        <p>
+            University of Eastern Pangasinan
+            <br />
+            Founded in 2005 - Excellence in Education
+        </p>
+    </aside>
+    <nav data-aos="fade-up" data-aos-delay="300">
+        <h6 class="footer-title">Quick Links</h6>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Admissions</a>
+        <a class="link link-hover">Academics</a>
+        <a class="link link-hover">Research</a>
+    </nav>
+    <nav data-aos="fade-up" data-aos-delay="450">
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+    </nav>
+    <nav data-aos="fade-up" data-aos-delay="600">
+        <span class="footer-title text-white font-crimson">Contact UEP</span>
+        <a class="link link-hover">Canarvacanan 2436 Binalonan, Pangasinan, Philippines</a>
+        <a class="link link-hover">registrar_uep@yahoo.com.ph</a>
+        <a class="link link-hover">(075) 562 5874</a>
+        <div class="grid grid-flow-col gap-4 mt-2">
+            <a href="https://www.facebook.com/UEPangBinalonan"><i class="fab fa-facebook-f text-lg hover:text-red-400"></i></a>
+            <a><i class="fab fa-twitter text-lg hover:text-red-400"></i></a>
+            <a><i class="fab fa-linkedin text-lg hover:text-red-400"></i></a>
+            <a><i class="fab fa-youtube text-lg hover:text-red-400"></i></a>
+        </div>
+    </nav>
+</footer>
+
+<!-- Bottom Footer -->
+<div class="footer footer-center p-4 bg-gray-950 text-gray-400 border-t border-gray-800" data-aos="fade-up" data-aos-delay="750">
+    <aside>
+        <p>Copyright © 2024 - All rights reserved by University of Eastern Pangasinan</p>
+    </aside>
+</div>
+
+<!-- Back to Top Button -->
+  <button id="backToTop" 
+    class="hidden fixed bottom-6 right-6 bg-red-700 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-900 transition">
+    ↑ Top
+  </button>
+
+  <!-- AOS Animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+      easing: "ease-in-out"
+    });
+  </script>
+
+<!-- Fade-up Animation Styles -->
+<style>
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+}
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+   window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+       backToTopBtn.classList.remove("hidden");
+     } else {
+       backToTopBtn.classList.add("hidden");
+     }
+  });
+
+   backToTopBtn.addEventListener("click", () => {
+     window.scrollTo({ top: 0, behavior: "smooth" });
+   });
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\UEP logo.png" href="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\UEP logo.png">
+    <title>University of Eastern Pangasinan Academic Portal: Excellence in Digital Education Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+        .font-crimson {
+            font-family: 'Crimson Text', serif;
+        }
+
+        .font-open {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .harvard-red {
+            background-color: #A41034;
+        }
+
+        .harvard-red-text {
+            color: #A41034;
+        }
+
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(164, 16, 52, 0.9) 100%, rgba(140, 21, 21, 0.9) 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 min-h-screen font-open">
+    <!-- Navigation -->
+    <div class="navbar bg-white shadow-lg border-b-2 border-red-800" data-aos="fade-down">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <i class="fas fa-bars text-xl text-red-800"></i>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-white rounded-lg w-52 border">
+                    <li><a href="#" class="text-gray-700 hover:text-red-800">Home</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-red-800">Academics</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-red-800">Research</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-red-800">Campus Life</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl font-crimson text-red-800 font-bold">
+                <i class="fas fa-university mr-2"></i> UEP Academic Portal
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="home.html" class="font-medium text-gray-700 hover:text-red-800">Home</a></li>
+              <li><a href="academics.html" class="font-medium text-gray-700 hover:text-red-800">Academics</a></li>
+              <li><a href="research.html" class="font-medium text-gray-700 hover:text-red-800">Research</a></li>
+              <li><a href="campuslife.html" class="font-medium text-gray-700 hover:text-red-800">Campus Life</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+                <!-- Navbar Access Portal button -->
+                <a href="login.html" class="btn harvard-red text-white hover:bg-red-900 border-none">
+                    Access Portal
+                </a>
+        </div>
+    </div>
+
+    <!-- Hero Section with UEP-style banner -->
+    <div class="relative min-h-[70vh] bg-cover bg-center"
+        style="background-image: url('https://storage.googleapis.com/oa_disk001/uep/104/school_logo/1696554132-1415.JPG');"
+        data-aos="fade-up">
+        <div class="absolute inset-0 gradient-overlay"></div>
+        <div class="relative hero min-h-[70vh]">
+            <div class="hero-content text-center text-white p-4 md:p-8">
+                <div class="max-w-4xl">
+                    <h1 class="text-4xl md:text-6xl font-bold font-crimson mb-4" data-aos="fade-up" data-aos-delay="200">
+                        UEP Academic Portal
+                    </h1>
+                    <h2 class="text-xl md:text-3xl mb-6 font-crimson opacity-90" data-aos="fade-up" data-aos-delay="400">
+                        Veritas Through Digital Innovation
+                    </h2>
+                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="600">
+                        Experience UEP's commitment to academic excellence through our state-of-the-art digital
+                        platform.
+                        Seamlessly manage your academic journey with tools designed for the world's most prestigious
+                        institution.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="800">
+                        <!-- Hero Section - Enter Portal button -->
+                        <a href="login.html" class="btn btn-lg bg-white text-red-800 hover:bg-gray-100 border-none font-semibold">
+                            Enter Portal
+                        </a>
+                        <a href="#features"
+                            class="btn btn-lg btn-outline text-white border-white hover:bg-white hover:text-red-800">
+                            Explore Features
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <section id="welcome_section" class="py-16 bg-gradient-to-b from-gray-50 via-white to-gray-100">
+      <div class="container mx-auto px-6 text-center">
+
+        <!-- Welcome Text -->
+        <h1 class="text-3xl md:text-4xl font-crimson font-bold text-red-800" data-aos="fade-up">
+          Welcome to University of Eastern Pangasinan
+        </h1>
+        <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="150">
+          At UEP, campus life goes beyond classrooms — it is a journey of discovery, growth, and community.  
+          Our university is a place where students find opportunities to learn, connect, and thrive.  
+          Together, we embrace a culture of excellence, innovation, and service for the future.
+        </p>
+
+        <!-- Video Frame -->
+        <div class="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl mt-8"
+             data-aos="zoom-in" data-aos-delay="300">
+          <video controls autoplay loop muted playsinline class="w-full rounded-lg">
+            <source src="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\UEP CAMPUS Tour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- UEP Traditions Section -->
+    <div class="py-16 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold font-crimson harvard-red-text mb-4">Academic Excellence Since 2005</h2>
+                <p>Building upon nearly four centuries of educational leadership, our digital platform embodies UEP's commitment to</p>
+                <p>scholarly pursuit and intellectual growth. The University of Eastern Pangasinan was established in 2005 by the</p>
+                <p>municipality of Binalonan. It joins the league of local universities that aims to provide quality education to</p>
+                <p>all aspiring students in the Province of Pangasinan.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-red-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-scroll text-3xl harvard-red-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-crimson mb-2">Historic Legacy</h3>
+                    <p class="text-gray-600">Since its founding in 2005, UEP has built a proud tradition of educational excellence and continuous innovation in higher learning.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-red-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-globe text-3xl harvard-red-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-crimson mb-2">Global Impact</h3>
+                    <p class="text-gray-600">Shaping leaders and innovators who transform communities worldwide.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-red-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-3xl harvard-red-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-crimson mb-2">Innovation</h3>
+                    <p class="text-gray-600">UEP has embraced research and digital advancements that drive progress and strengthen academic growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-16 bg-gray-50" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-crimson harvard-red-text" data-aos="fade-up">
+                Portal Capabilities
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card bg-white shadow-xl border border-gray-200 hover:shadow-2xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <figure class="px-10 pt-10">
+                        <div class="w-20 h-20 rounded-full bg-red-50 flex items-center justify-center">
+                            <i class="fas fa-medal text-4xl harvard-red-text"></i>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h3 class="card-title text-xl font-crimson">Academic Excellence</h3>
+                        <p class="text-gray-600">
+                            Comprehensive grade tracking and performance analytics aligned with UEP's rigorous
+                            academic standards.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-xl border border-gray-200 hover:shadow-2xl transition-shadow" data-aos="fade-up" data-aos-delay="400">
+                    <figure class="px-10 pt-10">
+                        <div class="w-20 h-20 rounded-full bg-red-50 flex items-center justify-center">
+                            <i class="fas fa-users text-4xl harvard-red-text"></i>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h3 class="card-title text-xl font-crimson">Community Engagement</h3>
+                        <p class="text-gray-600">
+                            Connect with fellow scholars, faculty, and the broader UEP community through integrated
+                            tools.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-xl border border-gray-200 hover:shadow-2xl transition-shadow" data-aos="fade-up" data-aos-delay="600">
+                    <figure class="px-10 pt-10">
+                        <div class="w-20 h-20 rounded-full bg-red-50 flex items-center justify-center">
+                            <i class="fas fa-brain text-4xl harvard-red-text"></i>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h3 class="card-title text-xl font-crimson">Research Resources</h3>
+                        <p class="text-gray-600">
+                            Access to UEP's vast digital libraries, research databases, and scholarly publications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+<div class="py-16 bg-white" data-aos="fade-up">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 font-crimson harvard-red-text" data-aos="fade-up">
+      Voices from UEP
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Testimonial 1 -->
+      <div class="card bg-white shadow-xl border border-gray-200 hover:shadow-2xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-body">
+          <div class="flex items-center mb-4">
+            <div class="avatar">
+              <div class="w-12 rounded-full">
+                <img src="https://www.pangasinan.gov.ph/wp-content/uploads/2023/03/GovernorRamonVGuicoIII-525x700.png" alt="Student" />
+              </div>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold font-crimson">Hon. Ramon V. Guico III</h3>
+              <p class="text-sm text-gray-600">UEP Founder and Governor of Pangasinan</p>
+            </div>
+          </div>
+          <p class="text-gray-700 italic text-justify indent-8">
+            "As the founder of UEP and Governor of Pangasinan, I see the portal as a bridge that connects our vision for quality education with the needs of our students. It empowers them to manage their academic journey with ease and confidence. This digital innovation ensures that UEP continues to grow as a modern, forward-looking university."
+          </p>
+          <div class="mt-3 flex space-x-1 text-amber-500 justify-start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="card bg-white shadow-xl border border-gray-200 hover:shadow-2xl transition-shadow" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-body">
+          <div class="flex items-center mb-4">
+            <div class="avatar">
+              <div class="w-12 rounded-full">
+                <img src="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\Dr. Evelyn Abalos-Tomboc.png" alt="Professor" />
+              </div>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold font-crimson">Dr. Evelyn Abalos-Tomboc</h3>
+              <p class="text-sm text-gray-600">University President</p>
+            </div>
+          </div>
+          <p class="text-gray-700 italic text-justify indent-8">
+            "This portal exemplifies UEP's dedication to innovation in education. It seamlessly integrates our academic traditions with cutting-edge technology. It makes learning more accessible, organizes academic processes, and strengthens the connection between students and the university."
+          </p>
+          <div class="mt-3 flex space-x-1 text-amber-500 justify-start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="card bg-white shadow-xl border border-gray-200 hover:shadow-2xl transition-shadow" data-aos="fade-up" data-aos-delay="600">
+        <div class="card-body">
+          <div class="flex items-center mb-4">
+            <div class="avatar">
+              <div class="w-12 rounded-full">
+                <img src="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\Dr. Gloria C. Nemedez.png" alt="Professor" />
+              </div>
+            </div>
+            <div class="ml-4">
+              <h3 class="font-bold font-crimson">Dr. Gloria C. Nemedez</h3>
+              <p class="text-sm text-gray-600">Vice President for Academic Affairs and Internationalization</p>
+            </div>
+          </div>
+          <p class="text-gray-700 italic text-justify indent-8">
+            "As Vice President for Academic Affairs and Internationalization, I view the portal as an essential platform for connecting our academic programs with global standards. It supports collaboration, research, and learning beyond the classroom. Through this system, UEP stands ready to prepare students for both local and international opportunities."
+          </p>
+          <div class="mt-3 flex space-x-1 text-amber-500 justify-start">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <!-- Call to Action -->
+    <div class="py-16 harvard-red text-white" data-aos="fade-up">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-crimson mb-6" data-aos="fade-up">
+                Begin Your Academic Journey with UEP
+            </h2>
+            <p class="mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Join a community dedicated to academic excellence, research innovation, and global impact. Here at UEP, we empower students to discover their potential, collaborate with inspiring mentors, and pursue opportunities that shape their future and the world around them.
+            </p>
+            <a href="login.html" class="btn btn-lg bg-white text-red-800 hover:bg-gray-100 border-none font-semibold"
+                data-aos="fade-up" data-aos-delay="400">
+                Access Portal
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer p-10 bg-gray-900 text-gray-300" data-aos="fade-up">
+        <aside>
+            <i class="fas fa-university text-3xl text-red-600 mb-4"></i>
+            <p>
+                University of Eastern Pangasinan
+                <br />
+                Founded in 2005 - Excellence in Education
+            </p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Quick Links</h6>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Admissions</a>
+            <a class="link link-hover">Academics</a>
+            <a class="link link-hover">Research</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <div>
+            <span class="footer-title text-white font-crimson">Contact UEP</span>
+            <a class="link link-hover"> Canarvacanan 2436 Binalonan, Pangasinan, Philippines</a>
+            <a class="link link-hover"><span class="__cf_email__" data-cfemail="d9b0b7bfb699b1b8abafb8abbdf7bcbdac">registrar_uep@yahoo.com.ph</span></a>
+            <a class="link link-hover"> (075) 562 5874</a>
+            <div class="grid grid-flow-col gap-4 mt-2">
+                <a href="https://www.facebook.com/UEPangBinalonan"><i class="fab fa-facebook-f text-lg hover:text-red-400" class="contact-button, btn btn-outline-light"></i></a>
+                <a><i class="fab fa-twitter text-lg hover:text-red-400"></i></a>
+                <a><i class="fab fa-linkedin text-lg hover:text-red-400"></i></a>
+                <a><i class="fab fa-youtube text-lg hover:text-red-400"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer footer-center p-4 bg-gray-950 text-gray-400 border-t border-gray-800" data-aos="fade-up">
+        <aside>
+            <p>Copyright © 2024 - All rights reserved by University of Eastern Pangasinan</p>
+        </aside>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" 
+      class="hidden fixed bottom-6 right-6 bg-red-700 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-900 transition">
+      ↑ Top
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+        });
+    </script>
+
+    <script>
+      const backToTopBtn = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.remove("hidden");
+        } else {
+          backToTopBtn.classList.add("hidden");
+        }
+      });
+
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+</body>
+</html>

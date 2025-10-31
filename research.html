@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\UEP logo.png" href="C:\Users\Windows 11\Documents\UEP Portal ver 2 HTML\UEP logo.png">
+  <title>UEP Academic Portal - Research</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Open+Sans:wght@400;600&display=swap');
+    .font-crimson { font-family: 'Crimson Text', serif; }
+    .font-open { font-family: 'Open Sans', sans-serif; }
+    .uep-red { color: #A41034; }
+    .uep-red-bg { background-color: #A41034; }
+
+    /* Fade-up animation (slower) */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1.5s ease-out; /* slowed down */
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="font-open bg-gray-50">
+
+  <!-- Navbar -->
+  <div class="navbar bg-white shadow-lg border-b-2 border-red-800 fade-up">
+    <div class="navbar-start">
+      <a class="btn btn-ghost normal-case text-xl font-crimson text-red-800 font-bold" href="index.html">
+        <i class="fas fa-university mr-2"></i> UEP Academic Portal
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="home.html" class="font-medium text-gray-700 hover:text-red-800">Home</a></li>
+        <li><a href="academics.html" class="font-medium text-gray-700 hover:text-red-800">Academics</a></li>
+        <li><a href="research.html" class="font-medium text-red-800">Research</a></li>
+        <li><a href="campuslife.html" class="font-medium text-gray-700 hover:text-red-800">Campus Life</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a href="login.html" class="btn bg-red-700 text-white hover:bg-red-900 border-none">
+        Access Portal
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="relative h-[60vh] bg-cover bg-center fade-up" style="background-image: url('https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/485075592_1163147062265140_3176331213551252313_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEJzEbsNbFZDbDBd0-nhFF_SUTphAQ3m7hJROmEBDebuNAcKbzTtKMj5SN92pk41J5apoFms4lW83KdX1bh91pp&_nc_ohc=Ni-Sd5-5IIAQ7kNvwEZQRpK&_nc_oc=AdlY8t3Pg-fZrEShVfjcGy59sWNle2idbj-dBo-nN4ZXJ4PLCs2cAAGEfnX5Y2P2vqU&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=fLDPflAAAdhDEpRzn2lEtw&oh=00_AfcRziENF-_IoMl4lpDwjExi2tZsOIEEq9OCfyILJYwttQ&oe=690A5D7D');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative flex items-center justify-center h-full text-center text-white px-6 fade-up">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-crimson font-bold mb-4">Research at UEP</h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto">Advancing knowledge, fostering innovation, and shaping the future through impactful research and scholarly work.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Research Areas -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 fade-up">
+      <h2 class="text-3xl font-crimson font-bold uep-red text-center mb-12">Our Key Research Areas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="card bg-gray-50 shadow-lg hover:shadow-2xl transition fade-up">
+          <div class="card-body text-center">
+            <i class="fas fa-flask text-4xl uep-red mb-4"></i>
+            <h3 class="text-xl font-crimson font-bold mb-2">Science & Technology</h3>
+            <p class="text-gray-600">Innovations in applied sciences, computing, and engineering to address real-world challenges.</p>
+          </div>
+        </div>
+
+        <div class="card bg-gray-50 shadow-lg hover:shadow-2xl transition fade-up">
+          <div class="card-body text-center">
+            <i class="fas fa-leaf text-4xl uep-red mb-4"></i>
+            <h3 class="text-xl font-crimson font-bold mb-2">Sustainable Development</h3>
+            <p class="text-gray-600">Research initiatives that promote environmental sustainability, renewable energy, and resilience.</p>
+          </div>
+        </div>
+
+        <div class="card bg-gray-50 shadow-lg hover:shadow-2xl transition fade-up">
+          <div class="card-body text-center">
+            <i class="fas fa-users text-4xl uep-red mb-4"></i>
+            <h3 class="text-xl font-crimson font-bold mb-2">Social Sciences</h3>
+            <p class="text-gray-600">Exploring culture, governance, and community development to strengthen social progress.</p>
+          </div>
+        </div>
+
+        <div class="card bg-gray-50 shadow-lg hover:shadow-2xl transition fade-up">
+          <div class="card-body text-center">
+            <i class="fas fa-heartbeat text-4xl uep-red mb-4"></i>
+            <h3 class="text-xl font-crimson font-bold mb-2">Health & Medicine</h3>
+            <p class="text-gray-600">Promoting public health, healthcare innovations, and medical breakthroughs for communities.</p>
+          </div>
+        </div>
+
+        <div class="card bg-gray-50 shadow-lg hover:shadow-2xl transition fade-up">
+          <div class="card-body text-center">
+            <i class="fas fa-book text-4xl uep-red mb-4"></i>
+            <h3 class="text-xl font-crimson font-bold mb-2">Education & Pedagogy</h3>
+            <p class="text-gray-600">Advancing teaching methods and learning tools to improve education systems and practices.</p>
+          </div>
+        </div>
+
+        <div class="card bg-gray-50 shadow-lg hover:shadow-2xl transition fade-up">
+          <div class="card-body text-center">
+            <i class="fas fa-globe text-4xl uep-red mb-4"></i>
+            <h3 class="text-xl font-crimson font-bold mb-2">Global Collaboration</h3>
+            <p class="text-gray-600">Strengthening international partnerships to exchange knowledge and expand research impact.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6 fade-up">
+    <h2 class="text-3xl font-crimson font-bold uep-red text-center mb-12">Featured Research Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Project 1 -->
+      <div class="bg-white shadow-lg rounded-lg hover:shadow-2xl transition fade-up overflow-hidden">
+        <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/524788130_1267433068503205_913890962869447205_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFj4oZfyyaBNNXAnt5bku0PtaT13f1Qn721pPXd_VCfvSHowfYdihlAG__TbGpicM8Naz1y-h1qcuTrMiGPFP-U&_nc_ohc=-9gHKH4fGQ4Q7kNvwEqvZNc&_nc_oc=AdmgME41AZVhesXJEsYSyXoObjyPygNOKFNZQfTxcPI9ob1T4hn-V8aJk4Rd2xqmTXA&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=xPr9qdvcvYyif5QhlplKCA&oh=00_AfeCozd21qXwj_OsoQw5YtuRS-LnD6X-RwryMF9TJOw9Fw&oe=690A4B6A" alt="Digital Learning" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold font-crimson mb-2">𝐔𝐄𝐏 𝐬𝐞𝐜𝐮𝐫𝐞𝐬 𝐢𝐭𝐬 𝐯𝐞𝐫𝐲 𝐟𝐢𝐫𝐬𝐭 𝐞𝐱𝐭𝐞𝐫𝐧𝐚𝐥𝐥𝐲 𝐟𝐮𝐧𝐝𝐞𝐝 𝐫𝐞𝐬𝐞𝐚𝐫𝐜𝐡 𝐩𝐫𝐨𝐣𝐞𝐜𝐭</h3>
+          <p class="text-gray-600">The University of Eastern Pangasinan (UEP) has signed a MOA with the Commission on Population and Development (CPD) for its first externally funded research project, titled “Patterns and Effects of Parental Guidance on Sexuality and Reproductive Health Concerns among Children of OFW Families.” Led by the Research, Innovation, Training, and Extension office under Dr. Jeofrey B. Abalos, the study examines parent-child communication on reproductive health and sets the foundation for UEP’s future research endeavors.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white shadow-lg rounded-lg hover:shadow-2xl transition fade-up overflow-hidden">
+        <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/518177806_122163053792532366_1979172378865283709_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHShKblpthC5MiLGw5F54eVi4vtKsxnpaCLi-0qzGeloCbh8zgvhz8Cxp4XNyj19ZkKrKBeSgiFM1nNOg1lBnoJ&_nc_ohc=X01pMm82zVcQ7kNvwEEgtKM&_nc_oc=AdkvtRIy8sqKdyqoF0bqC7TqwHw7eJrCHKB5Yymaby-FRiVUzlE83hPNahTJt8W9mEE&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=abUOUyPVXzdgaXGjpuBYLQ&oh=00_AfdjUwGddYITTx48ELC6v72bRjYN1IxlOkoFyUixceO0Rg&oe=690A485F">
+        <div class="p-6">
+          <h3 class="text-xl font-bold font-crimson mb-2">𝐔𝐄𝐏 𝐉𝐨𝐢𝐧𝐬 𝐂𝐏𝐒-𝐋𝐞𝐝 𝐁𝐞𝐧𝐜𝐡𝐦𝐚𝐫𝐤𝐢𝐧𝐠 𝐕𝐢𝐬𝐢𝐭 𝐭𝐨 𝐔𝐏, 𝐒𝐩𝐚𝐫𝐤𝐬 𝐂𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐯𝐞 𝐎𝐩𝐩𝐨𝐫𝐭𝐮𝐧𝐢𝐭𝐢𝐞𝐬 𝐢𝐧 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡 𝐚𝐧𝐝 𝐈𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐨𝐧</h3>
+          <p class="text-gray-600">The Center for Pangasinan Studies (CPS) led a benchmarking visit to UP Diliman and UP Los Baños on July 3–4, 2025, with UEP representatives joining to explore research, publication, and extension best practices. The two-day activity featured discussions on faculty incentives, collaborative programs, and global partnerships, highlighted by presentations from key UPLB offices and a talk by Balik Scientist Dr. Elemer Mojica. The visit strengthened academic ties and opened opportunities for cooperation in research, ethics training, and institutional development, reaffirming CPS and UEP’s commitment to advancing Pangasinan’s academic landscape.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white shadow-lg rounded-lg hover:shadow-2xl transition fade-up overflow-hidden">
+        <img src="https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/497710129_122153909438532366_9040068556144370439_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeENjHvngqL2-66XV3mfI38m79BsJHgJM2jv0GwkeAkzaLwaZ6X2p82ePc5AKplXn96JTDUwsOKlw5tOEv5ri76l&_nc_ohc=p24Zthh8eosQ7kNvwHPXZ4F&_nc_oc=AdnqzTe0_BPOWZ7p8gU2LQfT75vQBBBEn_NRkaxg4YW-djK6t0bcva-77-iLUVAUU1U&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=HSVx3PfBIIah7owENdb7bA&oh=00_AfeomVmfKTdImvxhGwUIEnJpunrADU12hqOKjX809gf-qQ&oe=690A53B7">
+        <div class="p-6">
+          <h3 class="text-xl font-bold font-crimson mb-2">𝐔𝐄𝐏 𝐇𝐨𝐬𝐭𝐬 𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡 𝐂𝐨𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞, 𝐒𝐡𝐨𝐰𝐜𝐚𝐬𝐢𝐧𝐠 𝐈𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐄𝐱𝐜𝐞𝐥𝐥𝐞𝐧𝐜𝐞</h3>
+          <p class="text-gray-600">The University of Eastern Pangasinan (UEP) successfully held its first International Research Conference on March 18, 2025, highlighting innovation, technology, business, and education under the theme “Leveraging Empirical Research to Promote Society’s Well-being and Foster International Understanding.” The event featured keynote speaker Dr. Dahlia Simangan from Hiroshima University and showcased outstanding research presentations, with Mr. Glen S. Diwag winning first place. The conference affirmed UEP’s dedication to promoting global research excellence and societal advancement.</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-white shadow-lg rounded-lg hover:shadow-2xl transition fade-up overflow-hidden">
+        <img src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t39.30808-6/525462705_122253151580231499_4815540770068565883_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFgt8XjUEyjXbm8uj16yISU36ZH2Ijjhq7fpkfYiOOGrs4Gx-HcGj_ccUFCG4VTCv2SS8hSZ6MQ0Jc_xdnpItzs&_nc_ohc=_WS50D0QdrkQ7kNvwEJL9xA&_nc_oc=AdkBZbtUXS-R-SQBR_U3Nh0WMLsdwM_TUpqp7PMhzGURo5moB8bZ37RLpHJSC3hpt9s&_nc_zt=23&_nc_ht=scontent.fcrk1-4.fna&_nc_gid=oaE5QdpSBzvDo9i5_Dr7AA&oh=00_AffpgmLNWb9HNE4CvvzeNau1DSg7-cJkf1dKIOn6I0JubA&oe=690A7967" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold font-crimson mb-2">UEP attends two back-to-back international research conferences</h3>
+          <p class="text-gray-600">The University of Eastern Pangasinan (UEP) participated in two international research conferences: the 6th Asian Population Association Conference in Nepal and the 1st KUUB Postgraduate by Research Colloquium in Malaysia. Led by Research Director Dr. Jeofrey Abalos, who presented and chaired sessions, UEP delegates showcased studies on topics such as sustainability, education, and innovation. The events gathered global researchers, promoting collaboration and strengthening UEP’s commitment to addressing global challenges through research and academic excellence.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer p-10 bg-gray-900 text-gray-300">
+      <aside class="fade-up">
+          <i class="fas fa-university text-3xl text-red-600 mb-4"></i>
+          <p>
+              University of Eastern Pangasinan
+              <br />
+              Founded in 2005 - Excellence in Education
+          </p>
+      </aside>
+      <nav class="fade-up">
+          <h6 class="footer-title">Quick Links</h6>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Admissions</a>
+          <a class="link link-hover">Academics</a>
+          <a class="link link-hover">Research</a>
+      </nav>
+      <nav class="fade-up">
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <nav class="fade-up">
+          <span class="footer-title text-white font-crimson">Contact UEP</span>
+          <a class="link link-hover">Canarvacanan 2436 Binalonan, Pangasinan, Philippines</a>
+          <a class="link link-hover">registrar_uep@yahoo.com.ph</a>
+          <a class="link link-hover">(075) 562 5874</a>
+          <div class="grid grid-flow-col gap-4 mt-2">
+              <a href="https://www.facebook.com/UEPangBinalonan"><i class="fab fa-facebook-f text-lg hover:text-red-400"></i></a>
+              <a><i class="fab fa-twitter text-lg hover:text-red-400"></i></a>
+              <a><i class="fab fa-linkedin text-lg hover:text-red-400"></i></a>
+              <a><i class="fab fa-youtube text-lg hover:text-red-400"></i></a>
+          </div>
+      </nav>
+  </footer>
+
+  <!-- Bottom Footer -->
+  <div class="footer footer-center p-4 bg-gray-950 text-gray-400 border-t border-gray-800 fade-up">
+      <aside>
+          <p>Copyright © 2024 - All rights reserved by University of Eastern Pangasinan</p>
+      </aside>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" 
+    class="hidden fixed bottom-6 right-6 bg-red-700 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-900 transition">
+    ↑ Top
+  </button>
+
+  <!-- Animation Script with Slower Stagger -->
+  <script>
+    const faders = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('show');
+          }, index * 400); // slower stagger (400ms per item)
+        }
+      });
+    }, { threshold: 0.2 });
+
+    faders.forEach(el => observer.observe(el));
+  </script>
+
+  <script>
+    const backToTopBtn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.remove("hidden");
+      } else {
+        backToTopBtn.classList.add("hidden");
+      }
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
